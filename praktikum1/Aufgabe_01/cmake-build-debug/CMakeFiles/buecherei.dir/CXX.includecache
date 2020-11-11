@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Book.h
+string
+-
+
+../include/Library.h
+string
+-
+map
+-
+
+../include/Shelf.h
+string
+-
+vector
+-
+
+../include/Visitor.h
+string
+-
+vector
+-
+
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/src/Library.cpp
+Library.h
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/src/Library.h
+Book.h
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/src/Book.h
+Visitor.h
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/src/Visitor.h
+sstream
+-
+Shelf.h
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/src/Shelf.h
+

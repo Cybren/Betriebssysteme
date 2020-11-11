@@ -1,0 +1,3 @@
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tillnebel/Desktop/BSS20:21/Praktikum/Aufgaben/A1/Aufgabe_01/cmake-build-debug/CMakeFiles/buecherei.dir
