@@ -1,3 +1,6 @@
+//Ben Gerhards ben-gerhards@t-online.de 35438258
+//Till Nebel tillnebel@googlemail.com 35375771
+
 #include "Library.h"
 #include "Book.h"
 #include "Visitor.h"
