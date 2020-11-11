@@ -1,5 +1,5 @@
 Ben Gerhards ben-gerhards@t-online.de 35438258
-Till Nebel
+Till Nebel tillnebel@googlemail.com 35375771
 
 1. a)
 at(const key_type& k): gibt eine Referenz auf das Element zurück, welches durch den Schlüssel k identifiziert wird, falls ein solches exisitert. Ansonsten out_of_range exception.
