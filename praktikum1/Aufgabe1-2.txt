@@ -1,0 +1,15 @@
+1. a)
+at(const key_type& k): gibt eine Referenz auf das Element zurück, welches durch den Schlüssel k identifiziert wird, falls ein solches exisitert. Ansonsten out_of_range exception.
+emplace(Args&&... args): Fügt ein neues Element ein, falls der angegebene Schlüssel bisher nicht in der Map enthalten ist. Dieses Element wird aus den angegebenen Argumenten gebildet. Die Größe des Containers wird durch das Einfügen um eins erhöht.
+			 Es wird ein Pair zurück gegeben. Wenn ein Objekt eingefügt wurde, enthält das Pair einen Iterator auf das neue Element und einen bool, der true ist. Wenn der Key bereits existiert, wird kein neues Objekt eingefügt und es wird ein Iterator,
+			 der auf das schon exisiterende Element des Schlüssels zeigt, zusammen mit einem bool, der in dem Fall false ist, zurück gegegben.
+erase(): Je nach Argumenten werden ein oder mehrere Argumente entfernt. Die Größe wird dementsprechend verringert. Die Nummer der entfernten Objekte wird zurück gegeben.
+
+b)
+at(size_type n): gibt eine Referenz auf das Objekt an Stelle n zurück. In der Funktion wird überprüft ob n überhaupt im Rahmen des Vektors ist, im gegensatz zu []. Wenn n außerhalb des Rahmens ist, wird eine out_of_range exception geworfen.
+find(InputIterator first, InputIterator last, const T& val): Durchsucht das Intervall [first, last) und gibt einen Iterator für das erste zum Argument val äquivalenten ( in Bezug auf == ) Objekt zurück. Falls kein solches Element gefunden wird, wird der letzte Eintrag zurück gegeben.
+
+2.a) const gibt in dem Fall an, dass das Objekt, welches zurück gegeben wird, nicht mehr verändert werden darf.
+
+b) *: Gibt an, dass es sich beim Typen des Vectors um Zeiger der Klasse Book handelt. Der Vector enthält also nur Pointer auf Objekte der Klasse book, die manuell ausgewertet werden müssen.
+& : Gibt an, dass es sich bei der Rückgabe der Methode um eine Referenz auf die Rückgabe handelt, also eine Referenz auf den Vector. 
