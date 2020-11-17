@@ -8,10 +8,11 @@ b) Beim Multiprogramming werden mehrere Programme in den Hauptspeicher geladen, 
 b)Falsch: Multiprogramming kann auch auf einer CPU ausgeführt werden und wurde ursprünglich auch genau dazu entwickelt. Wie oben beschrieben werden dabei einfach alle im Hauptspeicher geladenen Programme pseudoparallel ausgeführt. Durch 2 CPUs wäre es möglich 2 Prozesse echt parallel laufen zu lassen.
 c)Richtig: Beispiel: Ein Android Smartphone kann über einen Browser und ein Protokoll mit einem Linux Server kommunizieren.
 d)Richtig?
-e)?
+e)Richtig: Beide werden zur (korrekten) Ausführung von Prozessen benötigt
 
 3b)open: Datei öffnen, write: In die geöffnete Datei schreiben, close: die geöffnete Datei schließen, mkdir: Verzeichnis anlegen
-c)
+c) Die Unterteilung in Usermode und Kernelmode ist wichtig, damit sich das Betriebssystem von böswilligen oder unbeabsichtigten Zugriffen von außen Schützen kann. Beispielsweise sollten Fehler in Anwendungsprogrammen nicht dazu führen, dass das ganze System instabil wird.
+   Dadurch, dass Anwendungsprogramme nicht auf den Kernelspace zugreifen können, können sie dort nicht ohne weiteres unerwünschte Veränderungen vornehmen und das Betriebssystem kann sicher weiterlaufen.
 d) call 0x403b00 <fclose> Führt Unterprogramm 0x403b00 aus. Schließt also die zuvor geöffnete Datei.
 mov $0x0,%eax Kopiert die Konstante 0x0 (also 0) in das Register eax. Der Inhalt wird also praktisch gelöscht.
 leave Stack wird gelöscht
