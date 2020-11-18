@@ -9,5 +9,5 @@ public:
     virtual ~PyramidBlock() = default;
 private:
     PyramidBlock(int id, int posX, int posY);
-
+    friend class Field;
 };
