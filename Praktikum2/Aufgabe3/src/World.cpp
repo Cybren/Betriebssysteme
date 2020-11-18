@@ -23,17 +23,18 @@ World::World(int length, int width)
 World::~World()
 {
     // TODO implement me
+    this->inputThread->join();
+    delete inputThread;
+    delete field;
 }
 
 int World::receiveConsoleInput(){
     std::string command;
 
-    //TODO implement me
     while(this->isRunning()){
         std::cout << "Enter command: ";
         getline(std::cin, command);
         std::cout << std::endl;
-        // TODO rename vector
         std::vector<std::string> pieces = this->split(command);
 
         if(pieces.empty()){
