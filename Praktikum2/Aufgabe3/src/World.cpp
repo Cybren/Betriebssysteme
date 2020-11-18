@@ -20,9 +20,7 @@ World::World(int length, int width)
     this->inputThread = new std::thread(&World::receiveConsoleInput, this);
 }
 
-World::~World()
-{
-    // TODO implement me
+World::~World(){
     this->inputThread->join();
     delete inputThread;
     delete field;
