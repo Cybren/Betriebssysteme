@@ -16,7 +16,7 @@ World::World(int length, int width)
     this->width = width;
     this->field = new Field(this->length, this->width);
     this->running = true;
-
+    std::cout << this->field->toString() << std::endl;
     this->inputThread = new std::thread(&World::receiveConsoleInput, this);
 }
 
@@ -82,6 +82,9 @@ int World::receiveConsoleInput(){
                 bool successful = this->field->moveBlock(std::stoi(pieces.at(1)), xPos, yPos);
                 if(!successful){
                     std::cerr << "This movement of block " << pieces.at(1) << " is not possible" << std::endl;
+                    continue;
+                }else{
+                    std::cout << "Movement successful" << std::endl;
                 }
             }else{
                 std::cerr << "The command: " << command << " is not supported. Please use add, move or exit" << std::endl;

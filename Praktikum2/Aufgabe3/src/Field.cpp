@@ -79,7 +79,7 @@ std::string Field::toString()
 {
     std::stringstream stream;
     for (int i = 0; i < this->length; i++) {
-        for (int j = 0; j < this->length; j++) {
+        for (int j = 0; j < this->width; j++) {
             if (this->field.at(i).at(j).empty()) {
                 stream << "X ";
             } else {
