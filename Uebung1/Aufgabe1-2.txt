@@ -1,0 +1,19 @@
+1a) Programmausführung, Zuteilung von Ressourcen, Input/Output, Zugriffschutz
+b) Beim Multiprogramming werden mehrere Programme in den Hauptspeicher geladen, von denen dann Abwechselnd einzelene Instruktionen ausgeführt werden. Es wird also nicht sofort dsa ganze Programm ausgeführt. Es findet also eine Pseudoparallelisierung statt.
+   Beim Timesharing geht es darum, dass mehere Benutzer ihre Programme auf einem Computer ausführen. Dafür wird die Prozessorleistung in gleichgroße Stüce zerlegt. Die einzelenen Zeitintervalle werden dann den einzelnen Benutzern zugeordnet und dmit den Programmen der Benutzer.
+   Timesharing wird also Benutzt um das arbeiten von mehreren Personen an einem Computer zu ermöglichen und damit die Auslastung des einen Computers zu verbessern. Multiprogramming hingegen wird auch benutzt, wenn nur ein Benutzer das System verwendet um mehrere Programme,
+   quasi Parallel laufen zu lassen und die Auslastung der CPU verbesser. Beispielweise ist es mit Multiprogrammming möglich, wenn ein Programm auf I/O warten muss in der Wartezeit ein anderes Programm auszuführen, sodass die Wartezeit des ersten Programms effizient genutzt wird.
+
+2a) Falsch: Microprogrammierung dient zur Verinheitlichung der Ausführungsumgebung, damit das gleiche Programm auf unterschiedlichen Systemen ausgefährt werden kann (Portabilität).
+b)Falsch: Multiprogramming kann auch auf einer CPU ausgeführt werden und wurde ursprünglich auch genau dazu entwickelt. Wie oben beschrieben werden dabei einfach alle im Hauptspeicher geladenen Programme pseudoparallel ausgeführt. Durch 2 CPUs wäre es möglich 2 Prozesse echt parallel laufen zu lassen.
+c)Richtig: Beispiel: Ein Android Smartphone kann über einen Browser und ein Protokoll mit einem Linux Server kommunizieren.
+d)Richtig: Über Virtuelle Maschinen, bsp. VirtualBox von Oracle
+e)Richtig: Beide werden zur (korrekten) Ausführung von Prozessen benötigt
+
+3b)open: Datei öffnen, write: In die geöffnete Datei schreiben, close: die geöffnete Datei schließen, mkdir: Verzeichnis anlegen
+c) Die Unterteilung in Usermode und Kernelmode ist wichtig, damit sich das Betriebssystem von böswilligen oder unbeabsichtigten Zugriffen von außen Schützen kann. Beispielsweise sollten Fehler in Anwendungsprogrammen nicht dazu führen, dass das ganze System instabil wird.
+   Dadurch, dass Anwendungsprogramme nicht auf den Kernelspace zugreifen können, können sie dort nicht ohne weiteres unerwünschte Veränderungen vornehmen und das Betriebssystem kann sicher weiterlaufen.
+d) call 0x403b00 <fclose> Führt Unterprogramm 0x403b00 aus. Schließt also die zuvor geöffnete Datei.
+mov $0x0,%eax Kopiert die Konstante 0x0 (also 0) in das Register eax. Der Inhalt wird also praktisch gelöscht.
+leave Stack wird gelöscht
+ret Führt Rücksprung aus Unterprogramm in den Programmteil aus, der das Unterprogramm aufgerufen hat.

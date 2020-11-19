@@ -1,0 +1,15 @@
+1a) dynamic_cast<new_type>(expression). dynamic_cast casted das Objekt auf welches Expression zeigt in den angegebenen Typ, falls der Typ des zu castenden Objects von new_type abgeleitet ist. Falls ein cast nicht möglich ist, wird ein Nullpointer zurückegeben. Falls expression eine Referenz ist, wird stattdessen eine bad_cast exeption geworfen.
+    dynamic_cast wird verwendet, wenn zur compilezeit der Typ des zu castended Objects nicht bekannt ist. Es ist außerdem möglich, auch seitwärts zu casten, nicht nur aufwärts und abwärts.
+b) static_cast<new_type> (expression) casted auch eine das Objekt auf das expression zeigt zum Typ new_type, wobei bei diesem cast nur implizite oder benutzerdefinierte casts möglich sind. Außerdem wird bei diesem Cast kein runtimecheck durchgeführt, er sollte also nur verwendet werden, wenn man schon zur compilezeit weiß, welcher Typ übergeben wird.
+c) siehe a und b
+
+2a) Der friend-operator kann in Klassendefinitionen eingsetzt werden, um den angegebenen Klassen oder Funktionen Zugriff auf die private und protected Variablen der Klasse zu geben.Wenn es also wichtig ist, dass nur eine Funktion Zugriff auf die privaten und geschützten Variablen einer Klasse hat, kann diese Funktion als freind deklariert werden,
+    ohne das man das Risiko eingeht, dass irgendwelche anderen Funktionen ausversehen diese Variablen verändern. Gerade, wenn die eigene Klassen von anderen Leuten benutzt wird, kann man so selber Funktionen und Klassen schreiben, die Zugriff haben aber andere Funktionen können die Variablen nicht auf unbeabsichtigte Weise verändern.
+    
+b) In der Klasse PyramidBlock fehlt der friend-operator für die Klasse Field, da in Field::addPyramidBlock auf den privaten Konstruktor zugegriffen wird. Selbes gilt für den friend-operator in CubeBlock.
+    In der Block Klasse muss die Klasse Field als friend deklariert werden, damit Field zugriff auf die privaten Variablen id, posX, posY hat.
+
+3a) Zu Beginn wird ein separator definiert, sowie ein vector von strings definiert. Danach wird solange ein Zeichen gefunden wird, welches nicht der separator ist der nächste seperator nach diesem Zeichen gesucht und der dazwischenligende String zum vector hinzugefügt. Danach wird ab diesem Separtor weiter gesucht. 
+Wenn kein Zeichen, welches sich vom separator unterscheidet mehr gefunden wird, wird der Vektor mit allen Strings zurückgegeben, also die Menge aller Strings, die durch den Separator voneinander getrennt waren als einzelne Strings.
+
+    
