@@ -7,7 +7,7 @@ b) Beim Multiprogramming werden mehrere Programme in den Hauptspeicher geladen, 
 2a) Falsch: Microprogrammierung dient zur Verinheitlichung der Ausführungsumgebung, damit das gleiche Programm auf unterschiedlichen Systemen ausgefährt werden kann (Portabilität).
 b)Falsch: Multiprogramming kann auch auf einer CPU ausgeführt werden und wurde ursprünglich auch genau dazu entwickelt. Wie oben beschrieben werden dabei einfach alle im Hauptspeicher geladenen Programme pseudoparallel ausgeführt. Durch 2 CPUs wäre es möglich 2 Prozesse echt parallel laufen zu lassen.
 c)Richtig: Beispiel: Ein Android Smartphone kann über einen Browser und ein Protokoll mit einem Linux Server kommunizieren.
-d)Richtig?
+d)Richtig: Über Virtuelle Maschinen, bsp. VirtualBox von Oracle
 e)Richtig: Beide werden zur (korrekten) Ausführung von Prozessen benötigt
 
 3b)open: Datei öffnen, write: In die geöffnete Datei schreiben, close: die geöffnete Datei schließen, mkdir: Verzeichnis anlegen
