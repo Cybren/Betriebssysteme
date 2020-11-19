@@ -1,0 +1,28 @@
+Aufgabe 3
+a)
+In main.cpp
+
+b)
+In Zeile 9 wird der Systemcall zum erstellen eines Directorys gestellt.
+In Zeile 10 wird der Systemcall zum wechseln des Directorys gestellt.
+In Zeile 11 wird der Systemcall zum erstellen einer neuen .txt Datei gestellt.
+In Zeile 12 wird der Systemcall zum öffnen der neuen Datei gestellt.
+In Zeile 14 wird der Systemcall zum schließen der neuen Datei gestellt.
+
+
+c)
+Die Unterteilung in User und Kernel Mode ist zu Schutz des Systems notwendig. Deshalb ist Operationen beispielsweise Benutzerprogramme, die im User Mode ausgeführt werden eingeschränkte Schreib und Leserechte. Diese Einschränkungen verhindern, dass vom User aus direkt systemrelevante Änderungen vorgenommen werden können, die das System gefährden. Um die Sicherheit der Betriebssystems zu waren können aus dem User Mode nur Anfragen (Systemcalls) gestellt werden, die dann überprüft und im Kernel Mode ausgeführt werden können, da dieser über umfassende Schreib und Leserechte verfügt.
+
+d)
+
+call 0x403b00 <fclose>
+In dem Befehl wird auf dem Stack den der Stelle  0x403b00 die Funktion fclose aufgerufen.
+
+mov $0x0,%eax
+In dem Befehl wird mittels mov der Inhalt des Registers EAX, das durch %eax angegeben wird, an die Stelle des aktuellen Aufrufs, was durch $ gekennzeichnet wird, kopiert.
+
+leave
+Dieser Befehl leert den Stack und kann auch zum rückgängig machen eines enter Befehls genutzt werden
+
+ret
+Mit dem Befehl wird der letzte call verlassen und springt weder zum nächsten Befehl, der nach call kommt
