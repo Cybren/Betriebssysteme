@@ -3,11 +3,12 @@ a)
 In main.cpp
 
 b)
-In Zeile 9 wird der Systemcall zum erstellen eines Directorys gestellt.
-In Zeile 10 wird der Systemcall zum wechseln des Directorys gestellt.
-In Zeile 11 wird der Systemcall zum erstellen einer neuen .txt Datei gestellt.
-In Zeile 12 wird der Systemcall zum öffnen der neuen Datei gestellt.
-In Zeile 14 wird der Systemcall zum schließen der neuen Datei gestellt.
+In Zeile 9 wird der Systemcall zum erstellen eines Directorys gestellt. mkdir
+In Zeile 10 wird der Systemcall zum wechseln des Directorys gestellt. chdir
+In Zeile 11 wird der Systemcall zum erstellen einer neuen .txt Datei gestellt. 
+In Zeile 12 wird der Systemcall zum öffnen der neuen Datei gestellt. open
+In Zeile 13 wird der Systemcall zum schreiben des Strings 123 in die geöffnete Datei gestellt. write
+In Zeile 14 wird der Systemcall zum schließen der neuen Datei gestellt. close
 
 
 c)
@@ -19,10 +20,10 @@ call 0x403b00 <fclose>
 In dem Befehl wird auf dem Stack den der Stelle  0x403b00 die Funktion fclose aufgerufen.
 
 mov $0x0,%eax
-In dem Befehl wird mittels mov der Inhalt des Registers EAX, das durch %eax angegeben wird, an die Stelle des aktuellen Aufrufs, was durch $ gekennzeichnet wird, kopiert.
+Kopiert die Konstante 0x0 (also 0) in das Register eax. Der Inhalt wird also praktisch gelöscht.
 
 leave
-Dieser Befehl leert den Stack und kann auch zum rückgängig machen eines enter Befehls genutzt werden
+Dieser Befehl leert den Stack und wird zum Rückgängig machen eines enter Befehls genutzt.
 
 ret
 Mit dem Befehl wird der letzte call verlassen und springt weder zum nächsten Befehl, der nach call kommt
