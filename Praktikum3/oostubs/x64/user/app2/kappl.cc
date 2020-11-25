@@ -40,11 +40,22 @@ void KeyboardApplication::action()
 
     //TODO implement
 
+    length = key - input;
+    if(length > 9 || length < 1){
+        kout << "invalid length, setting length to 3" << flush;
+    }
+
     kout << length << endl;
 
     kout << "Insert World width (1 digit): " << flush;
 
+    key = keyboard.getkey();
     //TODO implement
+    width = key - input;
+
+    if(width > 9 || width < 1){
+        kout << "invalid width, setting width to 3" << flush;
+    }
 
     kout << width << endl;
 
@@ -79,6 +90,42 @@ void KeyboardApplication::handleInput(World* world) const
     int id = 0;
 
     // TODO implement
+    char input = '0';
+    kout << "Insert action (1 digit): " << flush;
 
-    world->handleKeyboardInput(action, id, posX, posY);
+    Key key = keyboard.getkey();
+
+    action = key - input;
+
+    if(action == 1){
+        kout << "Insert type (1 digit): " << flush;
+        key = keyboard.getkey();
+        id = key - input;
+
+        kout << "Insert x-pos (1 digit): " << flush;
+        key = keyboard.getkey();
+        posX = key - input;
+
+        kout << "Insert y-pos (1 digit): " << flush;
+        key = keyboard.getkey();
+        posY = key - input;
+
+        world->handleKeyboardInput(action, id, posX, posY);
+    }else if (action == 2){
+        kout << "Insert ID (1 digit): " << flush;
+        key = keyboard.getkey();
+        id = key - input;
+
+        kout << "Insert x-pos (1 digit): " << flush;
+        key = keyboard.getkey();
+        posX = key - input;
+
+        kout << "Insert y-pos (1 digit): " << flush;
+        key = keyboard.getkey();
+        posY = key - input;
+
+        world->handleKeyboardInput(action, id, posX, posY);
+    }else{
+        kout << "invalid action." << flush;
+    }
 }

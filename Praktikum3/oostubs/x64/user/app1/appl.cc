@@ -8,5 +8,5 @@ extern Guarded_Semaphore koutsem;
 
 void Application::action ()
 {
-
+    
 }

@@ -23,7 +23,7 @@ void World::printField() {
 int World::handleKeyboardInput(int action, int id, int posX, int posY)
 {
     /**
-     * Innerhalb dieser Methode sollen die Befehle, die von der KeybordApllication entgegen genommen urden,
+     * Innerhalb dieser Methode sollen die Befehle, die von der KeybordApplication entgegen genommen wurden,
      * umgesetzt werden.
      * 1.: Soll ein Block hinzugefügt werden, muss anhand des ID Parameters entschieden werden um welchen Typ es
      * sich handelt und der neue Block an die entsprechende Position gesetzt werden
@@ -32,7 +32,21 @@ int World::handleKeyboardInput(int action, int id, int posX, int posY)
      * 4.: Geben Sie die resultierenden IDs zurück
      */
     //TODO Implement me
-
+    int newId = 0;
+    if(action == 1){
+        if(id == 1){
+            newId = field->addCubeBlock(posX, posY);
+        }else if(id == 2){
+            newId = field->addPyramidBlock(posX, posY);
+        }else{
+            kout << "invalid type" << flush;
+            newId = -1;
+        }
+    }else{
+        field->moveBlock(id, posX, posY);
+    }
+    field->printField();
+    return newId;
 }
 
 World::~World()
