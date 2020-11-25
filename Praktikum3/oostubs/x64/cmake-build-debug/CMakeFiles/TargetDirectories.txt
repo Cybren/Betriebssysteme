@@ -1,0 +1,3 @@
+/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/aufgabe_01.dir
+/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/edit_cache.dir

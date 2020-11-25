@@ -1,0 +1,4 @@
+/home/stefan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug
