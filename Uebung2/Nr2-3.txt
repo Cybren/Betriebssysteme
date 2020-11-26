@@ -1,11 +1,20 @@
-2a) Da bei der Funktion strcpy nicht überrüft wird, ob der String, der in den Buffer kopiert werden soll, höchstens so groß ist, wie der Buffer selber. Dadurch ist es möglich, dass Daten an Stellen in den Arbeitsspeicher schreiben kann, die dort nicht stehen sollten. 
+2a) 
+Da bei der Funktion strcpy nicht überprüft wird, ob der String, der in den Buffer kopiert werden soll, höchstens so groß ist, wie der Buffer selber. Dadurch ist es möglich, dass Daten an Stellen in den Arbeitsspeicher schreiben kann, die dort nicht stehen sollten. 
     Es ist beispielsweise dadurch möglich, die Rücksprungadresse oder Rückgabewerte zu manipulieren, sodass Code ausgeführt wird, der ursprünglich nicht erreichbar sein sollte.
 
-b) Wenn durch strcpy ein String kopiert wird, der größer ist als der Buffer, kann es passieren, dass das Programm versucht geschützte Daten im Hauptspeicher zu verändern, sodass das Betriebssystem das Programm beendet und ein entsprechender Fehler( Beispielsweise Segementation Fault oder Access Violation) ausgegeben wird.
+b) 
+Wenn durch strcpy ein String kopiert wird, der größer ist als der Buffer, kann es passieren, dass das Programm versucht geschützte Daten im Hauptspeicher zu verändern, sodass das Betriebssystem das Programm beendet und ein entsprechender Fehler( Beispielsweise Segementation Fault oder Access Violation) ausgegeben wird.
+
 
 c) 
+Um nur die beiden Eingaben zuzulassen kann man:
+statt: char password_buffer[16]; den buffer mit char password_buffer[strlen(password)];
+initialisieren.
+Oder man kann in der check-Methode eine Längenabfrage voranstellen, die, sollte password länger als 16 sein mit 0 returned.
+Man kann die Längenüberprüfung auch schon in der if-Bedingung in main() vornehmen, die dann wie folgt aussieht: if(strlen(argv[1]) <= 16 && check(argv[1])){...}
 
-3a)Systemvirtualisierung (Hypervisor Typ-1): Microsoft Hyper-V. Um mehrere Betriebsysteme auf einer Hardware direkt auszuführen.
+3a)
+Systemvirtualisierung (Hypervisor Typ-1): Microsoft Hyper-V. Um mehrere Betriebsysteme auf einer Hardware direkt auszuführen.
 
 Systemvirtualisierung (Hypervisor Typ-2): VirtualBox. Um mehrere Betriebsysteme auf einem Hostbetriebssystem auszuführen.
 
@@ -14,3 +23,14 @@ Prozessvirtualisierung: JavaVM. Programme werden nur in VM ausgeführt.
 Betriebssystemvirtualisierung: Linux-VServer. Partitionierung des Hostbetriebssystems in Container
 
 b)
+Vorteile:
+-Ausgeführte Programme sind unabhängig vom Host-BS
+-Ausgeführte Programme sind unabhängig von der Hardware der Plattform
+-Einfache Portabilität zwischen verschiedenen Systemen 
+-Schützt durch die Abkapselung(Virtualisierung) das Host-BS
+
+Nachteile:
+-Relativ langsam Ausführung von Programmen, durch Virtualisierung
+-Schlechter Zugriff auf systemnahe Komponenten 
+-Enge Zusammenarbeit mit dem Betriebssystem ist durch die Virtualisierung sehr schwer
+
