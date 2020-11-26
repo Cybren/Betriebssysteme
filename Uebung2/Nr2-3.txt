@@ -15,3 +15,13 @@ Betriebssystemvirtualisierung: Linux-VServer. Partitionierung des Hostbetriebssy
 
 b)
 
+Vorteile:
+-Ausgeführte Programme sind unabhängig vom Host-BS
+-Ausgeführte Programme sind unabhängig von der Hardware der Plattform
+-Einfache Portabilität zwischen verschiedenen Systemen 
+-Schützt durch die Abkapselung(Virtualisierung) das Host-BS
+
+Nachteile:
+-Relativ langsam Ausführung von Programmen, durch Virtualisierung
+-Schlechter Zugriff auf systemnahe Komponenten 
+-Enge Zusammenarbeit mit dem Betriebssystem ist durch die Virtualisierung sehr schwer
