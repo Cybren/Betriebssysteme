@@ -1,7 +1,7 @@
 2a) Da bei der Funktion strcpy nicht überrüft wird, ob der String, der in den Buffer kopiert werden soll, höchstens so groß ist, wie der Buffer selber. Dadurch ist es möglich, dass Daten an Stellen in den Arbeitsspeicher schreiben kann, die dort nicht stehen sollten. 
     Es ist beispielsweise dadurch möglich, die Rücksprungadresse oder Rückgabewerte zu manipulieren, sodass Code ausgeführt wird, der ursprünglich nicht erreichbar sein sollte.
 
-b) Wenn durch strcpy ein String kopiert wird, der größer ist als der Buffer, kann es passieren, dass das Programm versucht geschützte Daten im Hauotspeicher zu verändern, sodass das Betriebssystem das Programm beendet und ein entsprechender Fehler( Beispielsweise Segementation Fault oder Access Violation) ausgegeben wird.
+b) Wenn durch strcpy ein String kopiert wird, der größer ist als der Buffer, kann es passieren, dass das Programm versucht geschützte Daten im Hauptspeicher zu verändern, sodass das Betriebssystem das Programm beendet und ein entsprechender Fehler( Beispielsweise Segementation Fault oder Access Violation) ausgegeben wird.
 
 c) 
 
@@ -14,4 +14,3 @@ Prozessvirtualisierung: JavaVM. Programme werden nur in VM ausgeführt.
 Betriebssystemvirtualisierung: Linux-VServer. Partitionierung des Hostbetriebssystems in Container
 
 b)
-
