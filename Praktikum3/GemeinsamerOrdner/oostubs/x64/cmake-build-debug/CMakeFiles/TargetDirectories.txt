@@ -1,0 +1,3 @@
+/Users/tillnebel/Desktop/BSS20:21/vm/GemeinsamerOrdner/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tillnebel/Desktop/BSS20:21/vm/GemeinsamerOrdner/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tillnebel/Desktop/BSS20:21/vm/GemeinsamerOrdner/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/CMakeFiles/aufgabe_01.dir
