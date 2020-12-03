@@ -1,0 +1,104 @@
+cmake_minimum_required(VERSION 3.14)
+project(aufgabe_01)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(boot/multiboot)
+include_directories(compiler)
+include_directories(debug)
+include_directories(debug/gdb)
+include_directories(device)
+include_directories(guard)
+include_directories(machine)
+include_directories(meeting)
+include_directories(object)
+include_directories(syscall)
+include_directories(test-stream)
+include_directories(thread)
+include_directories(user/app1)
+include_directories(user/app2)
+include_directories(utils)
+
+add_executable(aufgabe_01
+        boot/multiboot/data.h
+        compiler/fix.h
+        debug/gdb/handler.h
+        debug/gdb/state.h
+        debug/gdb/stub.h
+        debug/assert.h
+        debug/kernelpanic.h
+        debug/null_stream.h
+        debug/output.h
+        device/cga_stream.h
+        device/keyboard.h
+        device/panic.h
+        device/serial_stream.h
+        device/watch.h
+        guard/gate.h
+        guard/guard.h
+        guard/guardian.h
+        guard/secure.h
+        machine/acpi.h
+        machine/apicsystem.h
+        machine/cga_screen.h
+        machine/context.h
+        machine/cpu.h
+        machine/fpu.h
+        machine/gdt.h
+        machine/idt.h
+        machine/io_port.h
+        machine/ioapic.h
+        machine/ioapic_registers.h
+        machine/key.h
+        machine/keyctrl.h
+        machine/keydecoder.h
+        machine/lapic.h
+        machine/lapic_registers.h
+        machine/plugbox.h
+        machine/serial.h
+        machine/spinlock.h
+        machine/ticketlock.h
+        meeting/bell.h
+        meeting/bellringer.h
+        meeting/semaphore.h
+        meeting/waitingroom.h
+        object/bbuffer.h
+        object/o_stream.h
+        object/queue.h
+        object/queuelink.h
+        object/strbuf.h
+        syscall/guarded_bell.h
+        syscall/guarded_keyboard.h
+        syscall/guarded_scheduler.h
+        syscall/guarded_semaphore.h
+        thread/assassin.h
+        thread/dispatcher.h
+        thread/idlethread.h
+        thread/scheduler.h
+        thread/thread.h
+        thread/wakeup.h
+        user/app1/appl.cc
+        user/app1/appl.h
+        user/app2/Array.h
+        user/app2/Block.cc
+        user/app2/Block.h
+        user/app2/CubeBlock.cc
+        user/app2/CubeBlock.h
+        user/app2/Field.cc
+        user/app2/Field.h
+        user/app2/kappl.cc
+        user/app2/kappl.h
+        user/app2/PyramidBlock.cc
+        user/app2/PyramidBlock.h
+        user/app2/World.cc
+        user/app2/World.h
+        utils/heap.h
+        utils/math.h
+        utils/memutil.h
+        utils/random.h
+        utils/strutil.h
+        main.cc
+        types.h user/app2/kappltest.h)
+
+target_link_libraries(aufgabe_01 liboostubs.a)
