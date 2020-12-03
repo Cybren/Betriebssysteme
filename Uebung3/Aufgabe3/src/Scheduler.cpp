@@ -11,6 +11,11 @@ void Scheduler::schedule() {
      * verwendet, die die maximale Anzahl der Tasks enthält.
      */
     for(int i = 0; i < 6; i++) {
-        //TODO implement me
+        while(taskQueue->empty()){
+            continue;
+        }
+        Task nextTask = taskQueue->front();
+        taskQueue->pop();
+        nextTask.execute();
     }
 }
