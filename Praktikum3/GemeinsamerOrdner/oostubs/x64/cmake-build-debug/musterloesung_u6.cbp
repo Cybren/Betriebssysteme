@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="musterloesung_u6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="musterloesung_u6">
+				<Option output="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/musterloesung_u6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/."/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/boot/multiboot"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/compiler"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/gdb"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/test-stream"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app1"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 musterloesung_u6"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="musterloesung_u6/fast">
+				<Option output="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/musterloesung_u6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/."/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/boot/multiboot"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/compiler"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/gdb"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/test-stream"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app1"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2"/>
+					<Add directory="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 musterloesung_u6/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/stefan/Documents/BSneu/BSSlides/Neue\ BS\ Unterlagen/Praktikumsaufgaben/Aufgabe\ 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/boot/multiboot/data.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/compiler/fix.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/assert.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/gdb/handler.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/gdb/state.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/gdb/stub.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/kernelpanic.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/null_stream.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/debug/output.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device/cga_stream.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device/keyboard.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device/panic.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device/serial_stream.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/device/watch.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard/gate.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard/guard.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard/guardian.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/guard/secure.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/acpi.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/apicsystem.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/cga_screen.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/context.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/cpu.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/fpu.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/gdt.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/idt.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/io_port.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/ioapic.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/ioapic_registers.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/key.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/keyctrl.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/keydecoder.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/lapic.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/lapic_registers.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/plugbox.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/serial.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/spinlock.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/machine/ticketlock.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/main.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting/bell.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting/bellringer.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting/semaphore.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/meeting/waitingroom.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object/bbuffer.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object/o_stream.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object/queue.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object/queuelink.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/object/strbuf.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall/guarded_bell.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall/guarded_keyboard.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall/guarded_scheduler.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/syscall/guarded_semaphore.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/assassin.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/dispatcher.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/idlethread.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/scheduler.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/thread.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/thread/wakeup.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/types.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app1/appl.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app1/appl.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/Array.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/Block.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/Block.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/CubeBlock.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/CubeBlock.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/Field.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/Field.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/PyramidBlock.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/PyramidBlock.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/World.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/World.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/kappl.cc">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/user/app2/kappl.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils/heap.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils/math.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils/memutil.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils/random.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/utils/strutil.h">
+			<Option target="musterloesung_u6"/>
+		</Unit>
+		<Unit filename="/home/stefan/Documents/BSneu/BSSlides/Neue BS Unterlagen/Praktikumsaufgaben/Aufgabe 1/Aufgabe/GemeinsamerOrdner/oostubs/x64/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
