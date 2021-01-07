@@ -64,7 +64,7 @@ void CGA_Screen::getpos (int& x, int& y)
 		index_port.outb (15);
 		low = data_port.inb ();
 
-		pos = (high & 0x3f) <<8 | (low & 0xff);
+		pos = (high & 0x3f) << 8 | (low & 0xff);
 		x  = pos % COLUMNS;
 		y  = pos / COLUMNS;
 	} else {
@@ -74,6 +74,14 @@ void CGA_Screen::getpos (int& x, int& y)
 }
 
 void CGA_Screen::print (char* string, int length, Attribute attribute) {
+	int posX;
+	int posY;
+	getpos(posX, posY);
+	for (int i = 0; i < length; i++){
+		checkBounce(posX, posY, *(string+i), attribute);
+		printC(posY * CGA_Screen::COLUMNS + posX, *(string+i), attribute);
+	}
+	
     //TODO Vervollständigen
 }
 
@@ -92,13 +100,15 @@ void CGA_Screen::reset (char character, Attribute attribute)
 
 void CGA_Screen::checkBounce(int x, int y, char character, Attribute attribute) {
     //TODO Vervollständingen
+	if(x+1 > CGA_Screen::COLUMNS || character == '\n'){
+		this->to_col++;
+		this->to_row++;
+		this->x_pos = 0;
+		this->y_pos++;
+	}
 }
 
 void CGA_Screen::printC (int pos, char character, Attribute attribute) {
     //TODO Vervollständigen
+	CGA_START[pos] = (Cell) {character, attribute};
 }
-
-
-
-
-

@@ -5,6 +5,8 @@
 extern CGA_Stream kout;
 
 void Application::action () {
+    /*unsigned long long x = 10;
+    kout << x << endl;*/
     kout << "bool:       " << true << " -> true" << endl;
     kout << "zero:       " << 0 << " -> 0" << endl;
     kout << "ten:        " << (10) << " -> 10" << endl;

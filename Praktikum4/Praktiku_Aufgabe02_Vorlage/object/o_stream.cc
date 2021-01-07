@@ -2,19 +2,33 @@
 
 O_Stream& O_Stream::operator << (char c) {
 	//TODO implement me
+	put(c);
+	return *this;
 }
 
 O_Stream& O_Stream::operator << (unsigned char c) {
 	//TODO implement me
+	return *this << (unsigned long long) c;
 }
 
 O_Stream& O_Stream::operator << (const char* string) {
 	//TODO implement me
+	char c = *string;
+	int i = 0;
+	while(c != '\0'){
+		put(c);
+		i++;
+		c = *(string+i);
+	}
+	return *this;
 }
 
-O_Stream& O_Stream::operator << (bool b)
-{
-	//TODO implement me
+O_Stream& O_Stream::operator << (bool b){
+	if(b){
+		return *this << "true";
+	}else{
+		return *this << "false";
+	}
 }
 
 O_Stream& O_Stream::operator << (short ival) {
@@ -98,24 +112,29 @@ O_Stream& flush(O_Stream& os) {
 	return os;
 }
 
-
 O_Stream& endl(O_Stream& os) {
-	//TODO implement me
+	os << '\n';
+	os.flush();
+	return os;
 }
 
 O_Stream& bin(O_Stream& os) {
-	//TODO implement me
+	os.base = 2;
+	return os;
 }
 
 O_Stream& oct(O_Stream& os) {
-	//TODO implement me
+	os.base = 8;
+	return os;
 }
 
 O_Stream& dec(O_Stream& os) {
-	//TODO implement me
+	os.base = 10;
+	return os;
 }
 
 O_Stream& hex(O_Stream& os) {
-	//TODO implement me
+	os.base = 16;
+	return os;
 }
 
