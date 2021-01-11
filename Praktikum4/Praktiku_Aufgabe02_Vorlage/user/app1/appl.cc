@@ -5,8 +5,8 @@
 extern CGA_Stream kout;
 
 void Application::action () {
-    kout << "bool:       " << true << " -> true" << endl;
-    kout << "zero:       " << 0 << " -> 0" << endl;
+    kout << "bool:       " << true << " -> tr\nue" << endl;
+    kout << "zero:       " << 0 << " -> 0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" << endl;
     kout << "ten:        " << (10) << " -> 10" << endl;
     kout << "uint max:   " << ~((unsigned int) 0) << " -> 4294967295" << endl;
     kout << "int max:    " << ~(1 << 31) << " -> 2147483647" << endl;
@@ -17,4 +17,6 @@ void Application::action () {
     kout << "octal:      " << oct << 42 << dec << " -> 052" << endl;
     kout << "hex:        " << hex << 42 << dec << " -> 0x2a" << endl;
     kout << "pointer:    " << ((void *) (3735928559u)) << " -> 0xdeadbeef" << endl;
+
+
 }

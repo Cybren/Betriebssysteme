@@ -1,7 +1,6 @@
 #include "machine/cga_screen.h"
 #include "machine/io_port.h"
 #include "device/cga_stream.h"
-//extern CGA_Stream kout;
 
 static IO_Port index_port (0x3d4);
 
@@ -79,7 +78,6 @@ void CGA_Screen::print (char* string, int length, Attribute attribute) {
 	int posX;
 	int posY;
 	getpos(posX, posY);
-	//kout << posX << " " << posY << endl;
 	for (int i = 0; i < length; i++){
 		checkBounce(posX + i, posY, *(string+i), attribute);
 		if(*(string+i) != '\n'){
@@ -92,11 +90,13 @@ void CGA_Screen::print (char* string, int length, Attribute attribute) {
 
 
 void CGA_Screen::writeToConsole(/*Todo Parameterauffüllen*/) {
+    for (int x = from_col; x <= to_col; ++x) {
+
+    }
     //TODO Vervollständigen
 }
 
-void CGA_Screen::reset (char character, Attribute attribute)
-{
+void CGA_Screen::reset (char character, Attribute attribute) {
 	for(int y = from_row; y <= to_row; ++y)
 		for(int x = from_col; x <= to_col; ++x)
 			checkBounce(x, y, character, attribute);
@@ -105,7 +105,7 @@ void CGA_Screen::reset (char character, Attribute attribute)
 
 void CGA_Screen::checkBounce(int x, int y, char character, Attribute attribute) {
     //TODO Vervollständingen
-	if(x+1 > CGA_Screen::COLUMNS || character == '\n'){
+	if(x+1 > CGA_Screen::ROWS || character == '\n'){
 		setpos(0, y+1);
 	}
 }
