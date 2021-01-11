@@ -3,8 +3,7 @@
 #include "types.h"
 
 
-class CGA_Screen
-{
+class CGA_Screen{
 private:
 
 	CGA_Screen(const CGA_Screen&)            = delete;
@@ -56,9 +55,9 @@ public:
 	void print (char* string, int length, Attribute attrib = Attribute());
 	void reset(char character=' ', Attribute attrib = Attribute());
 	static void show (int x, int y, char character, Attribute attrib = Attribute());
-    	void printC (int pos, char character, Attribute attribute = Attribute());
+	void printC (int pos, char character, Attribute attribute = Attribute());
 	void checkBounce (int x, int y, char character, Attribute attribute = Attribute());
-    	void writeToConsole (/*TODO Paramater auffüllen*/);
+	void writeToConsole (int z, int y, Attribute attribute);
 
 private:
 	struct Cell {

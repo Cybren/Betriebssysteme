@@ -83,15 +83,19 @@ void CGA_Screen::print (char* string, int length, Attribute attribute) {
 		if(*(string+i) != '\n'){
 			printC(posY * CGA_Screen::COLUMNS + posX + i, *(string+i), attribute);
 		}
+        if(posY == to_row){
+            writeToConsole(posX, posY, attribute);
+        }
 	}
-	
+
     //TODO Vervollständigen
 }
 
 
-void CGA_Screen::writeToConsole(/*Todo Parameterauffüllen*/) {
-    for (int x = from_col; x <= to_col; ++x) {
-
+void CGA_Screen::writeToConsole(int z, int y, Attribute attribute) {
+    char sp = '_';
+    for (int x = from_col; x < to_col; ++x) {
+        printC(y * CGA_Screen::COLUMNS + z + x, sp, attribute);
     }
     //TODO Vervollständigen
 }
