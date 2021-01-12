@@ -58,7 +58,7 @@ public:
 	static void show (int x, int y, char character, Attribute attrib = Attribute());
     	void printC (int pos, char character, Attribute attribute = Attribute());
 	void checkBounce (int x, int y, char character, Attribute attribute = Attribute());
-    	void writeToConsole (/*TODO Paramater auffüllen*/);
+    	void writeToConsole ();
 
 private:
 	struct Cell {
