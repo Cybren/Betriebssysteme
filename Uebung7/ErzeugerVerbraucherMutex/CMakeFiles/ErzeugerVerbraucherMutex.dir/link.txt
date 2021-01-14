@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -pthread     CMakeFiles/ErzeugerVerbraucherMutex.dir/src/main.cpp.o CMakeFiles/ErzeugerVerbraucherMutex.dir/src/Konditor.cpp.o CMakeFiles/ErzeugerVerbraucherMutex.dir/src/Verbraucher.cpp.o  -o ErzeugerVerbraucherMutex 

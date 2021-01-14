@@ -15,14 +15,19 @@ Konditor::Konditor(std::queue<std::string>* queue, std::mutex* mutex, sem_t* sem
 std::string Konditor::backen()
 {
     std::cout << "[Konditor " << this->id << "]Backe Kuchen" << std::endl;
-    return "Kuchen";
+    return "Kuchen" + std::to_string(id);
 }
 
-void Konditor::einfuegen(std::string kuchen)
-{
-    sem_wait(semaphoreBelegt);
+void Konditor::einfuegen(std::string kuchen) {
+    //TODO Implement me
+
+    sem_wait(semaphoreLeer);
+    sem_wait(reinterpret_cast<sem_t *>(mutex));
+
     queue->push(kuchen);
-    sem_post(semaphoreLeer);
+
+    sem_post(reinterpret_cast<sem_t *>(mutex));
+    sem_post(semaphoreBelegt);
 }
 
 void Konditor::run()
