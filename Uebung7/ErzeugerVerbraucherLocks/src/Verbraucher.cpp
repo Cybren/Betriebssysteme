@@ -15,10 +15,13 @@ Verbraucher::Verbraucher(std::queue<std::string>* queue, std::mutex* mutex, std:
 std::string Verbraucher::entnehmen()
 {
     std::unique_lock<std::mutex> lk(*mutex);
-    conditionVariableLeer->wait(lk);
+    while(queue->size() <= 0) {
+        conditionVariableLeer->wait(lk);
+    }
+    std::string kuchen = queue->front();
     queue->pop();
-    lk.unlock();
     conditionVariableBelegt->notify_one();
+    return kuchen;
     //TODO implement me
 }
 

@@ -22,10 +22,11 @@ std::string Konditor::backen()
 void Konditor::einfuegen(std::string kuchen)
 {
     std::unique_lock<std::mutex> lk(*mutex);
-    conditionVariableBelegt->wait(lk);
+    while(queue->size() >= 5) {
+        conditionVariableBelegt->wait(lk);
+    }    
     queue->push(kuchen);
-    lk.unlock();
-    conditionVariableLeer->notify_one();
+    conditionVariableLeer->notify_all();
     //TODO implement me
 }
 
