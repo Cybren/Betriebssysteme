@@ -57,7 +57,11 @@ public:
 	static void show (int x, int y, char character, Attribute attrib = Attribute());
 	void printC (int pos, char character, Attribute attribute = Attribute());
 	void checkBounce (int x, int y, char character, Attribute attribute = Attribute());
+<<<<<<< HEAD
 	void writeToConsole (int z, int y, Attribute attribute);
+=======
+    	void writeToConsole ();
+>>>>>>> 8527cf63cc1172c1d454181d2c0df1740f71a677
 
 private:
 	struct Cell {
