@@ -4,30 +4,18 @@
 #include <shared_mutex>
 
 
-Reader::Reader(int queue, std::shared_mutex* mutex, int time, int id)
-        : queue(queue)
-        , mutex(mutex)
-        , time(time)
+Reader::Reader(int* database, std::shared_mutex& mutexShared, int id, int time)
+        : database(database)
+        , mutexShared(mutexShared)
         , id(id)
+        , time(time)
     {
 }
 
-std::string Reader::entnehmen(){
-    std::shared_lock lock(mutex);
-
-
-
-}
-
-void Reader::konsumieren(std::string kuchen)
-{
-    std::cout << "[Verbraucher]Verbrauche " + kuchen << std::endl;
-    sleep(this->time);
-}
-
-void Reader::run()
-{
+void Reader::run(){
     while (true) {
-        konsumieren(this->entnehmen());
+        sleep(time);
+        std::shared_lock lock(mutexShared);
+        std::cout << "Reader(" << id <<  "): database value is: " << *database << std::endl;
     }
 }

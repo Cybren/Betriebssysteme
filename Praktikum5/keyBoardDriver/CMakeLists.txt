@@ -1,0 +1,118 @@
+cmake_minimum_required(VERSION 3.10)
+project(keyBoardDriver)
+
+set(CMAKE_CXX_STANDARD 11)
+
+include_directories(.)
+include_directories(debug)
+include_directories(debug/gdb)
+include_directories(device)
+include_directories(guard)
+include_directories(machine)
+include_directories(meeting)
+include_directories(object)
+include_directories(syscall)
+include_directories(thread)
+include_directories(user/app1)
+include_directories(user/app)
+include_directories(utils)
+
+add_executable(keyBoardDriver
+        boot/startup.cc
+        debug/gdb/handler.cc
+        debug/gdb/init.cc
+        debug/gdb/protocol.cc
+        debug/gdb/stub.h
+        debug/assert.cc
+        debug/assert.h
+        debug/kernelpanic.h
+        debug/null_stream.cc
+        debug/null_stream.h
+        debug/output.h
+        device/cgastr.cc
+        device/cgastr.h
+        device/console.cc
+        device/console.h
+        device/keyboard.cc
+        device/keyboard.h
+        device/panic.cc
+        device/panic.h
+        device/watch.cc
+        device/watch.h
+        guard/gate.h
+        guard/guard.cc
+        guard/guard.h
+        guard/guardian.cc
+        guard/guardian.h
+        guard/secure.h
+        machine/acpi.cc
+        machine/acpi.h
+        machine/apicsystem.cc
+        machine/apicsystem.h
+        machine/cgascr.cc
+        machine/cgascr.h
+        machine/cpu.h
+        machine/gdt.cc
+        machine/gdt.h
+        machine/io_port.h
+        machine/ioapic.cc
+        machine/ioapic.h
+        machine/ioapic_registers.h
+        machine/key.cc
+        machine/key.h
+        machine/keyctrl.cc
+        machine/keyctrl.h
+        machine/keydecoder.cc
+        machine/keydecoder.h
+        machine/lapic.cc
+        machine/lapic.h
+        machine/lapic_registers.h
+        machine/mp_registers.h
+        machine/plugbox.cc
+        machine/plugbox.h
+        machine/serial.cc
+        machine/serial.h
+        machine/spinlock.h
+        machine/ticketlock.h
+        machine/toc.cc
+        machine/toc.h
+        meeting/bell.cc
+        meeting/bell.h
+        meeting/bellringer.cc
+        meeting/bellringer.h
+        meeting/semaphore.cc
+        meeting/semaphore.h
+        meeting/waitingroom.cc
+        meeting/waitingroom.h
+        object/bbuffer.h
+        object/o_stream.cc
+        object/o_stream.h
+        object/queue.h
+        object/queuelink.h
+        object/strbuf.cc
+        object/strbuf.h
+        syscall/guarded_bell.cc
+        syscall/guarded_bell.h
+        syscall/guarded_keyboard.cc
+        syscall/guarded_keyboard.h
+        syscall/guarded_scheduler.h
+        syscall/guarded_semaphore.h
+        thread/assassin.cc
+        thread/assassin.h
+        thread/dispatcher.cc
+        thread/dispatcher.h
+        thread/idlethread.cc
+        thread/idlethread.h
+        thread/scheduler.cc
+        thread/scheduler.h
+        thread/thread.cc
+        thread/thread.h
+        thread/wakeup.h
+        user/app/kappl.cc
+        user/app/kappl.h
+        utils/libcc.cc
+        utils/math.h
+        compiler.h
+        main.cc
+        types.h
+        )

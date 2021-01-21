@@ -9,17 +9,13 @@ class Reader {
 
 public:
 
-    Reader(int queue, std::shared_mutex* mutex, int time, int id);
+    Reader(int* database, std::shared_mutex& mutexShared, int id, int time);
     void run();
 private:
-    std::string entnehmen();
-    void konsumieren(std::string kuchen);
-    int time;
     int id;
-    int queue;
-    std::shared_mutex* mutex;
-    sem_t* semaphoreLeer;
-    sem_t* semaphoreBelegt;
+    int time;
+    int* database;
+    std::shared_mutex& mutexShared;
 };
 
 

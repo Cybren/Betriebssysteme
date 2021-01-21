@@ -1,27 +1,18 @@
 #include "Writer.h"
+#include <iostream>
 #include <unistd.h>
 
-Writer::Writer(int queue, std::shared_mutex* mutex, int time)
-        : queue(queue)
-        , mutex(mutex)
-        , time(time)
+Writer::Writer(int* database, std::shared_mutex& mutexShared)
+        : database(database)
+        , mutexShared(mutexShared)
     {
 }
 
-
-void Writer::einfuegen() {
-    std::srand(1);
-    int rand = std::rand();
-    std::unique_lock lock(mutex);
-
-
-
-}
-
-void Writer::run()
-{
+void Writer::run(){
     while (true) {
-        sleep(this->time);
-        einfuegen();
+        sleep(2);
+        std::unique_lock lock(mutexShared);
+        (*database)++;
+        std::cout << "increment counter to: " << *database << std::endl;
     }
 }

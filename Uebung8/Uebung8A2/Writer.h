@@ -9,17 +9,11 @@
 
 class Writer {
 public:
-    Writer(int queue, std::shared_mutex* mutex, int time);
+    Writer(int* database, std::shared_mutex& mutexShared);
     void run();
 private:
-    void einfuegen();
-    int time;
-    int id;
-    int queue;
-    std::shared_mutex* mutex;
-    sem_t* semaphoreLeer;
-    sem_t* semaphoreBelegt;
-
+    int* database;
+    std::shared_mutex& mutexShared;
 };
 
 
