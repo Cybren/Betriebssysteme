@@ -1,0 +1,47 @@
+Uebungsblatt 08
+Aufgabe 1
+a)
+	1)
+	Der Algo. speichert wie oft insgesamt gegessen wurde damit wird errechent ob ein Philosoph an der Reihe ist. Ist er nicht an der Reihe verfällte er in Buisy-Waiting bis er dran ist. Wenn der Philosoph an der Reihe ist nimmt er die linke, dann die rechter Gaben, isst und legt dann die rechte und dann die linke Gabel wieder hin. Nach dem beide Gabeln wieder liegen wird wird die Anzahl wie oft insgesamt gegessen wurde um Eins erhöht, so dass dann der nächste Philosoph essen kann.
+	2)
+	Der Algo. is fair, da er wie ein Round-Robin-Prinziep abläuft und so immer nur ein Philosoph auf einmal isst, was zwar keinen Philosophen verhungern lässt aber trotzdem ineffizient ist. Außerdem gerät dieser Algo. nicht in einen Deadlock, vorausgesetzt kein Philosoph stürtzt ab.
+	
+b)
+	1)
+	Bei dem Algo. verhalten sich alle Philosoph gleich und nehemen erst die linke und dann die rechte Gabel, außer der Philosoph mit dem Index 3, dieser nimmt erst die rechte dann die linke Gabel. Danach essen alle Philosoph und legen erst die linke und dann die rechte Gabel hin. Diese veränderte Reihnfolge beim nehmen der Gabeln des dritten Philosoph sorgt dafür, dass es bei einer gleich Taktung der Philosoph nicht zu einem Deadlock kommt, da der Philosoph nach dem dritten immer auch seine rechte gabel bekommt und somit essen kann.
+	2)
+	Bei diesem Algo. verhungert auch kein Philosoph, da keinen Prioritäten gibt und auch kein Daedlock entstehen kann, außerdem ist er effizienter als der Algo. aus a), da hier mehr als ein Philosoph auf einmal essen kann. Die Fairnis dieses Algo. ist hingegen nicht so offensichtlich gegeben wie beim ersten.
+	
+Aufgabe 3
+a)
+path (A;B),D end
+init: s = 0
+					<(A;B),D>
+				<(A;B)>		<D>
+		  <A V(s)> 	<P(s) B>  <D>
+
+b)
+path 1:([A],[B]) end
+init: s = 1, s1 = 1, c = 0
+   					  	      <1:([A],[B])>
+							<P(s) [A],[B] V(s)>
+					<P(s) [A] V(s)> 	<P(s) [B] V(s)>
+<PP(c, s1 , P(s)) A VV(c, s1, V(s))>	<PP(c ,s1 ,P(s)) B VV(c, s1, V(s))>
+
+PP(c, s1, P(s)):
+	P(s1)
+	c = c + 1
+	IF c = 1 THEN P(s)
+	V(s1)
+	
+VV(c, s1, V(s)):
+	P(s1)
+	c = c - 1
+	IF c = 0 THEN V(s)
+	V(s1)
+
+
+
+
+
+
