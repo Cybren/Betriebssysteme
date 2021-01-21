@@ -1,3 +1,0 @@
-/Users/tillnebel/Desktop/BSS20:21/Vorlesung/Ü8/Uebung8A2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/tillnebel/Desktop/BSS20:21/Vorlesung/Ü8/Uebung8A2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tillnebel/Desktop/BSS20:21/Vorlesung/Ü8/Uebung8A2/cmake-build-debug/CMakeFiles/Uebung8A2.dir

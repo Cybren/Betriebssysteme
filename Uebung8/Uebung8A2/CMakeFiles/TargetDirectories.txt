@@ -1,3 +1,0 @@
-/media/sf_GemeinsamerOrdner/Uebung8A2/CMakeFiles/rebuild_cache.dir
-/media/sf_GemeinsamerOrdner/Uebung8A2/CMakeFiles/Uebung8A2.dir
-/media/sf_GemeinsamerOrdner/Uebung8A2/CMakeFiles/edit_cache.dir

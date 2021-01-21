@@ -1,1 +1,0 @@
-/usr/bin/c++   -pthread     CMakeFiles/Uebung8A2.dir/main.cpp.o CMakeFiles/Uebung8A2.dir/Reader.cpp.o CMakeFiles/Uebung8A2.dir/Writer.cpp.o  -o Uebung8A2 
