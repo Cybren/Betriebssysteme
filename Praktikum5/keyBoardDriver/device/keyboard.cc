@@ -1,4 +1,3 @@
-
 #include "device/keyboard.h"
 #include "machine/apicsystem.h"
 #include "machine/ioapic.h"
@@ -21,7 +20,13 @@ void Keyboard::plugin() {
 extern CGA_Stream kout;
 
 bool Keyboard::prologue() {
-   //TODO
+    //TODO
+    Key key = key_hit();
+    if(!currentkey.valid()){
+        currentkey = key;
+        return true;
+    }
+    return false;
 }
 
 void Keyboard::epilogue() {
@@ -29,6 +34,8 @@ void Keyboard::epilogue() {
 }
 
 Key Keyboard::getkey() {
-    //TODO
+    Key key = currentkey;
+    currentkey.invalidate();
+    return key;
 }
 

@@ -16,7 +16,7 @@ void testC(Key, char);
 void KeyboardApplication::action() {
     //TODO
     while (true) {
-
+        
     }
 }
 

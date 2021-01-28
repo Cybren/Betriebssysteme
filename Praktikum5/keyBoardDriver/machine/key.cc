@@ -30,30 +30,37 @@ void Key::SHIFT(bool pressed) {
 
 void Key::alt_left(bool pressed) {
     //TODO
+    modi = pressed ? modi | mbit::alt_left : modi & ~mbit::alt_left;
 }
 
 void Key::alt_right(bool pressed) {
     //TODO
+    modi = pressed ? modi | mbit::alt_right : modi & ~mbit::alt_right;
 }
 
 void Key::ctrl_left(bool pressed) {
     //TODO
+     modi = pressed ? modi | mbit::ctrl_left : modi & ~mbit::ctrl_left;
 }
 
 void Key::ctrl_right(bool pressed) {
    //TODO
+    modi = pressed ? modi | mbit::ctrl_right : modi & ~mbit::ctrl_right;
 }
 
 void Key::caps_lock(bool pressed) {
     //TODO
+     modi = pressed ? modi | mbit::caps_lock : modi & ~mbit::caps_lock;
 }
 
 void Key::num_lock(bool pressed) {
     //TODO
+     modi = pressed ? modi | mbit::num_lock : modi & ~mbit::num_lock;
 }
 
 void Key::scroll_lock(bool pressed) {
     //TODO
+     modi = pressed ? modi | mbit::num_lock : modi & ~mbit::num_lock;
 }
 
 bool Key::SHIFT() {
@@ -62,36 +69,45 @@ bool Key::SHIFT() {
 
 bool Key::alt_left() {
     //TODO
+    return modi & mbit::alt_left;
 }
 
 bool Key::alt_right() {
     //TODO
+    return modi & mbit::alt_right;
 }
 
 bool Key::ctrl_left() {
     //TODO
+    return modi & mbit::ctrl_left;
 }
 
 bool Key::ctrl_right() {
     //TODO
+    return modi & mbit::ctrl_right;
 }
 
 bool Key::caps_lock() {
     //TODO
+    return modi & mbit::caps_lock;
 }
 
 bool Key::num_lock() {
     //TODO
+    return modi & mbit::num_lock;
 }
 
 bool Key::scroll_lock() {
     //TODO
+    return modi & mbit::scroll_lock;
 }
 
 bool Key::alt() {
     //TODO
+    return (modi & mbit::alt_left) | (modi & mbit::alt_right);
 }
 
 bool Key::ctrl() {
     //TODO
+    return (modi & mbit::ctrl_left) | (modi & mbit::ctrl_right);
 }

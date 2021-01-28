@@ -6,6 +6,7 @@
 
 extern APICSystem system;
 extern IOAPIC ioapic;
+extern CGA_Stream kout;
 
 Keyboard_Controller::Keyboard_Controller() :
         keydecoder(this), ctrl_port(0x64), data_port(0x60) {
@@ -19,7 +20,9 @@ Key Keyboard_Controller::key_hit() {
     Key pressed;
     int control;
     while ((control = ctrl_port.inb()) & outb) {
-        //TODO
+        unsigned char code = data_port.inb();
+        Key_Decoder decoder(this);
+        pressed = decoder.decode(code);
     }
     return pressed;
 }
@@ -63,5 +66,4 @@ void Keyboard_Controller::send_command(unsigned char cmd, unsigned char data) {
 void Keyboard_Controller::send_byte(unsigned char byte) {
     while (ctrl_port.inb() & inpb) {}
     data_port.outb(byte);
-
 }
