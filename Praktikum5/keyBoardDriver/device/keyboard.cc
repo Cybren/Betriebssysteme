@@ -25,7 +25,7 @@ bool Keyboard::prologue() {
     if(!currentkey.valid()){
         currentkey = key;
         //extend to (strg + alt + entf)
-        if(key.alt()){
+        if(currentkey.alt()){
             reboot();
         }
         return true;
@@ -35,8 +35,8 @@ bool Keyboard::prologue() {
 
 void Keyboard::epilogue() {
     //TODO
-
-    getkey();
+    kout << getkey();
+    kout.flush();
 }
 
 Key Keyboard::getkey() {
