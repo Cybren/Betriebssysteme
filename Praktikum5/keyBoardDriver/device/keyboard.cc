@@ -24,6 +24,10 @@ bool Keyboard::prologue() {
     Key key = key_hit();
     if(!currentkey.valid()){
         currentkey = key;
+        //extend to (strg + alt + entf)
+        if(key.alt()){
+            reboot();
+        }
         return true;
     }
     return false;
@@ -31,6 +35,8 @@ bool Keyboard::prologue() {
 
 void Keyboard::epilogue() {
     //TODO
+
+    getkey();
 }
 
 Key Keyboard::getkey() {
