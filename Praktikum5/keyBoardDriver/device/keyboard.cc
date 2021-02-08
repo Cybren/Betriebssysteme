@@ -25,7 +25,7 @@ bool Keyboard::prologue() {
     if(!currentkey.valid()){
         currentkey = key;
         //extend to (strg + alt + entf)
-        if(currentkey.alt()){
+        if(currentkey.alt() && lastkey.ctrl()){
             reboot();
         }
         return true;
@@ -35,13 +35,17 @@ bool Keyboard::prologue() {
 
 void Keyboard::epilogue() {
     //TODO
-    kout << getkey();
-    kout.flush();
+    Key key = getkey();
+    if(key.scancode() != 0){
+        kout << key;
+        kout.flush();
+    }
 }
 
 Key Keyboard::getkey() {
     Key key = currentkey;
     currentkey.invalidate();
+    lastkey = key;
     return key;
 }
 
