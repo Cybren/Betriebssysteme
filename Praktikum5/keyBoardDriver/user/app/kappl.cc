@@ -15,8 +15,37 @@ void testC(Key, char);
 
 void KeyboardApplication::action() {
     //TODO
+    Key key;
+    kout << "strg + alt + 'e' for reboot" << endl << flush;
+
+    kout << endl << "Press 's'" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, 's');
+
+    kout << endl <<  "Press 'T'" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, 'T');
+
+    kout << endl << "Press ')'" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, ')');
+
+    kout << endl << "Press '{'" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, '{');
+
+    kout << endl << "Press ENTER" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, '\n');
+
+
+    kout << endl << "Press BACKSPACE" << endl << flush;
+    key = keyboard.getkey();
+    testC(key, '\b');
+
+
     while (true) {
-        
+
     }
 }
 

@@ -17,12 +17,15 @@ Keyboard_Controller::Keyboard_Controller() :
 }
 
 Key Keyboard_Controller::key_hit() {
+    //TODO
     Key pressed;
     int control;
-    while ((control = ctrl_port.inb()) & outb) {
+    while (((control = ctrl_port.inb()) & outb) && !(control & auxb)) {
         unsigned char code = data_port.inb();
-        Key_Decoder decoder(this);
-        pressed = decoder.decode(code);
+        pressed = keydecoder.decode(code);
+        if (pressed.valid()){
+            break;
+        }
     }
     return pressed;
 }
