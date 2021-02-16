@@ -24,8 +24,8 @@ bool Keyboard::prologue() {
     Key key = key_hit();
     if(!currentkey.valid()){
         currentkey = key;
-        //extend to (strg + alt + entf)
-        if(currentkey.alt() && lastkey.ctrl()){
+        //rebooten mit (strg + alt + e)
+        if(currentkey.alt() && currentkey.ctrl() && currentkey.ascii() == 'e'){
             reboot();
         }
         return true;
@@ -35,17 +35,13 @@ bool Keyboard::prologue() {
 
 void Keyboard::epilogue() {
     //TODO
-    Key key = getkey();
-    if(key.scancode() != 0){
-        kout << key;
-        kout.flush();
-    }
+    sema.v();
 }
 
 Key Keyboard::getkey() {
     Key key = currentkey;
+    sema.p();
     currentkey.invalidate();
-    lastkey = key;
     return key;
 }
 

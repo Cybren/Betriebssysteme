@@ -20,10 +20,7 @@ Key Keyboard_Controller::key_hit() {
     Key pressed;
     int control;
     while (((control = ctrl_port.inb()) & outb) && !(control & auxb)) {
-        //check with auxb
         unsigned char code = data_port.inb();
-        //kout << (int)code << " ";
-        //kout.flush();
         pressed = keydecoder.decode(code);
         if (pressed.valid()){
             break;
