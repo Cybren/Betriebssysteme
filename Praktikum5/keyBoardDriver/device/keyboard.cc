@@ -22,13 +22,15 @@ extern CGA_Stream kout;
 bool Keyboard::prologue() {
     //TODO
     Key key = key_hit();
-    if(!currentkey.valid()){
-        currentkey = key;
-        //rebooten mit (strg + alt + e)
-        if(currentkey.alt() && currentkey.ctrl() && currentkey.ascii() == 'e'){
-            reboot();
+    //rebooten mit (strg + alt + e)
+    if(currentkey.alt() && currentkey.ctrl() && currentkey.ascii() == 'e'){
+        reboot();
+    }
+    if(key.valid()){
+        if(!currentkey.valid()){
+            currentkey = key;
+            return true;
         }
-        return true;
     }
     return false;
 }
@@ -39,8 +41,9 @@ void Keyboard::epilogue() {
 }
 
 Key Keyboard::getkey() {
-    Key key = currentkey;
+    //TODO
     sema.p();
+    Key key = currentkey;
     currentkey.invalidate();
     return key;
 }

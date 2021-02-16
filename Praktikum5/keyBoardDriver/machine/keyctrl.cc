@@ -17,6 +17,7 @@ Keyboard_Controller::Keyboard_Controller() :
 }
 
 Key Keyboard_Controller::key_hit() {
+    //TODO
     Key pressed;
     int control;
     while (((control = ctrl_port.inb()) & outb) && !(control & auxb)) {
