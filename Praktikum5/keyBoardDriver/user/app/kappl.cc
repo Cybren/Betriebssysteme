@@ -36,13 +36,13 @@ void KeyboardApplication::action() {
 
     kout << endl << "Press ENTER" << endl << flush;
     key = keyboard.getkey();
-    testC(key, 13);
-    //kout << key.ascii() << " " << (int)key.scancode() << flush;
+    testC(key, '\n');
+
 
     kout << endl << "Press BACKSPACE" << endl << flush;
     key = keyboard.getkey();
-    testC(key, 32);
-    //kout << key.ascii() << " " << (int)key.scancode() << flush;
+    testC(key, '\b');
+
 
     while (true) {
 
